@@ -1,35 +1,48 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Jumbotron, Card, Row, Col, Image, Button } from 'react-bootstrap';
+import { Jumbotron, CardDeck, Card } from 'react-bootstrap';
 
 import Layout from './Layout';
-import Jointhematch from '../assets/jointhematch.png';
+import Jointhematch from '../assets/join-the-match01.jpeg';
+import ImageJumbotron from '../assets/sergio-website-assets.jpeg';
+import Belaycords from '../assets/belaycords.jpg';
 
 const Works = () => (
-    <Layout>
-        <Jumbotron>
-            <h2>Welcome to React-Bootstrap!</h2>
-            <p>This is how to build a website with React, React-Router &amp; React-Bootstrap.</p>
+    <React.Fragment>
+        <Jumbotron style={{backgroundImage: `url(${ImageJumbotron})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center 25%' }}>
         </Jumbotron>
-        <Link to="/about">
-            <Button bsStyle="primary">About</Button>
-        </Link>
-        <Link to="/skills">
-            <Button bsStyle="primary">Skills</Button>
-        </Link>
-        <Link to="/contact">
-            <Button bsStyle="primary">Contact</Button>
-        </Link>
+        <Layout>
+            <h2 style={{ color: "#F8F9FA"}}>Works</h2>
+            <p>A selection of my best works.</p>
+            <CardDeck style={{padding: '1rem 0'}}>
+                <Card bg='light'>
+                    <Card.Img variant="top" src={Jointhematch} />
+                    <Card.Body style={{ color: "#222222"}}>
+                        <Card.Title>Join The Match</Card.Title>
+                        <Card.Text>UI/UX project. An App that helps you organize and join sports events.</Card.Text>
+                        <Card.Link href="">More details</Card.Link>
+                    </Card.Body>
+                </Card>
 
-        <Card style={{width: '18rem'}}>
-            <Card.Img variant="top" src={Jointhematch} />
-            <Card.Body>
-                <Card.Title>Join The Match</Card.Title>
-                <Card.Text>UI/UX project. An App that helps you organize and join sports events.</Card.Text>
-                <Card.Link href="">More</Card.Link>
-            </Card.Body>
-        </Card>
-    </Layout>
+                <Card bg='light'>
+                    <Card.Img variant="top" src={Belaycords} />
+                    <Card.Body style={{ color: "#222222"}}>
+                        <Card.Title>BelayCords</Card.Title>
+                        <Card.Text>UI/UX college project. Design and development of a responsive website.</Card.Text>
+                        <Card.Link href="">More details</Card.Link>
+                    </Card.Body>
+                </Card>
+
+                <Card bg='light'>
+                    <Card.Img variant="top" src={Jointhematch} />
+                    <Card.Body style={{ color: "#222222"}}>
+                        <Card.Title>BelayCords</Card.Title>
+                        <Card.Text>UI/UX college project. Design and development of a responsive website.</Card.Text>
+                        <Card.Link href="">More details</Card.Link>
+                    </Card.Body>
+                </Card>
+            </CardDeck>
+        </Layout>
+    </React.Fragment>
 )
 
 export default Works;
