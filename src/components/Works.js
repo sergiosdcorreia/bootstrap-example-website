@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Jumbotron, Row, Col, Image, Button } from 'react-bootstrap';
+import { Jumbotron, Card, Row, Col, Image, Button } from 'react-bootstrap';
 
 import Layout from './Layout';
+import Jointhematch from '../assets/jointhematch.png';
 
 const Works = () => (
     <Layout>
@@ -19,6 +20,15 @@ const Works = () => (
         <Link to="/contact">
             <Button bsStyle="primary">Contact</Button>
         </Link>
+
+        <Card style={{width: '18rem'}}>
+            <Card.Img variant="top" src={Jointhematch} />
+            <Card.Body>
+                <Card.Title>Join The Match</Card.Title>
+                <Card.Text>UI/UX project. An App that helps you organize and join sports events.</Card.Text>
+                <Card.Link href="">More</Card.Link>
+            </Card.Body>
+        </Card>
     </Layout>
 )
 
