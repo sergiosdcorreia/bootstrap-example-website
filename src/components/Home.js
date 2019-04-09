@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Jumbotron, Container, Row, Col, Image, Button } from 'react-bootstrap';
 
-export default class Home extends Component {
+class Home extends Component {
     render() {
         return (
             <Container>
@@ -17,3 +17,5 @@ export default class Home extends Component {
         )
     }
 }
+
+export default Home;
