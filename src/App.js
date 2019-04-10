@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Jumbotron } from 'react-bootstrap';
+import ImageJumbotron from './assets/sergio-website-assets.jpeg';
 import Works from './components/Works';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -16,6 +18,8 @@ class App extends Component {
         <div style={{background: '#222222', color: "#eeeeee"}}>
           <Layout>
           <NavigationBar />
+          <Jumbotron style={{backgroundImage: `url(${ImageJumbotron})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center 25%' }}>
+          </Jumbotron>
             <Router>
               <Switch> 
                 <Route exact path="/" component={Works} />

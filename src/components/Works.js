@@ -1,18 +1,15 @@
 import React from 'react';
-import { Jumbotron, CardDeck, Card } from 'react-bootstrap';
+import { CardDeck, Card } from 'react-bootstrap';
 
 import Layout from './Layout';
 import Jointhematch from '../assets/join-the-match01.jpeg';
-import ImageJumbotron from '../assets/sergio-website-assets.jpeg';
 import Belaycords from '../assets/belaycords.jpg';
 
 const Works = () => (
     <React.Fragment>
-        <Jumbotron style={{backgroundImage: `url(${ImageJumbotron})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center 25%' }}>
-        </Jumbotron>
+
         <Layout>
-            <h2 style={{ color: "#F8F9FA"}}>Works</h2>
-            <p>A selection of my best works.</p>
+            <h2 style={{ color: "#bbb", marginBottom: "2rem"}}>Works</h2>
             <CardDeck style={{padding: '1rem 0'}}>
                 <Card bg='light'>
                     <Card.Img variant="top" src={Jointhematch} />
