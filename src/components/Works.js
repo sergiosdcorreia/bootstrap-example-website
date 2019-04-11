@@ -70,6 +70,7 @@ class Works extends Component {
             </CardDeck>
         </Layout>
         <Modal
+          size="lg"
           show={this.state.show1}
           onHide={this.handleHide}
           dialogClassName="modal-90w"
@@ -85,15 +86,16 @@ class Works extends Component {
               A reversible USB charging cable that lasts forever! 
             </h4>
             <p>This is a college project where the students had to choose a project from the KickStarter platform and create a responsive website to promote the product.</p>
-            <img src={BelayCordsModal01} style={{width: '100%'}} alt="BelayCords01" />
+            <img src={BelayCordsModal01} style={{´maxWidth: '100%'}} alt="BelayCords01" />
             <h6 style={{marginTop: "2rem", marginBottom: "1rem"}}>Desktop Layout</h6>
-            <img src={BelayCordsModal02} style={{width: '100%'}} alt="BelayCords02" />
+            <img src={BelayCordsModal02} style={{´maxWidth: '100%'}} alt="BelayCords02" />
             <h6 style={{marginTop: "2rem", marginBottom: "1rem"}}>Mobile Layout</h6>
-            <img src={BelayCordsModal03} alt="BelayCords03" />
+            <img src={BelayCordsModal03} style={{´maxWidth: '100%'}} alt="BelayCords03" />
           </Modal.Body>
         </Modal>
 
         <Modal
+          size="lg"
           show={this.state.show2}
           onHide={this.handleHide}
           dialogClassName="modal-90w"
@@ -109,15 +111,16 @@ class Works extends Component {
               A reversible USB charging cable that lasts forever! 
             </h4>
             <p>This is a college project where the students had to choose a project from the KickStarter platform and create a responsive website to promote the product.</p>
-            <img src={BelayCordsModal01} style={{width: '100%'}} alt="BelayCords01" />
+            <img src={BelayCordsModal01} style={{´maxWidth: '100%'}} alt="BelayCords01" />
             <h6 style={{marginTop: "2rem", marginBottom: "1rem"}}>Desktop Layout</h6>
-            <img src={BelayCordsModal02} style={{width: '100%'}} alt="BelayCords02" />
+            <img src={BelayCordsModal02} style={{´maxWidth: '100%'}} alt="BelayCords02" />
             <h6 style={{marginTop: "2rem", marginBottom: "1rem"}}>Mobile Layout</h6>
-            <img src={BelayCordsModal03} alt="BelayCords03" />
+            <img src={BelayCordsModal03} style={{´maxWidth: '100%'}} alt="BelayCords03" />
           </Modal.Body>
         </Modal>
 
         <Modal
+          size="lg"
           show={this.state.show3}
           onHide={this.handleHide}
           dialogClassName="modal-90w"
@@ -133,11 +136,11 @@ class Works extends Component {
               A reversible USB charging cable that lasts forever! 
             </h4>
             <p>This is a college project where the students had to choose a project from the KickStarter platform and create a responsive website to promote the product.</p>
-            <img src={BelayCordsModal01} style={{width: '100%'}} alt="BelayCords01" />
+            <img src={BelayCordsModal01} style={{´maxWidth: '100%'}} alt="BelayCords01" />
             <h6 style={{marginTop: "2rem", marginBottom: "1rem"}}>Desktop Layout</h6>
-            <img src={BelayCordsModal02} style={{width: '100%'}} alt="BelayCords02" />
+            <img src={BelayCordsModal02} style={{´maxWidth: '100%'}} alt="BelayCords02" />
             <h6 style={{marginTop: "2rem", marginBottom: "1rem"}}>Mobile Layout</h6>
-            <img src={BelayCordsModal03} alt="BelayCords03" />
+            <img src={BelayCordsModal03} style={{´maxWidth: '100%'}} alt="BelayCords03" />
 
           </Modal.Body>
         </Modal>
