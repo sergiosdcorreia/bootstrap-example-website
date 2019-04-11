@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div style={{background: '#222222', color: "#eeeeee"}}>
+        <div style={{background: '#222222'}}>
           <Layout>
           <NavigationBar />
           <Jumbotron style={{backgroundImage: `url(${ImageJumbotron})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center 25%' }}>

@@ -9,11 +9,11 @@ const Works = () => (
     <React.Fragment>
 
         <Layout>
-            <h2 style={{ color: "#bbb", marginBottom: "2rem"}}>Works</h2>
-            <CardDeck style={{padding: '1rem 0'}}>
+            <h2 style={{color: "#bbb"}}>Works</h2>
+            <CardDeck style={{padding: '1rem 0', marginTop: "2rem"}}>
                 <Card bg='light'>
                     <Card.Img variant="top" src={Jointhematch} />
-                    <Card.Body style={{ color: "#222222"}}>
+                    <Card.Body style={{ color: "#041122"}}>
                         <Card.Title>Join The Match</Card.Title>
                         <Card.Text>UI/UX project. An App that helps you organize and join sports events.</Card.Text>
                         <Card.Link href="">More details</Card.Link>
