@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { CardDeck, Card, Modal } from 'react-bootstrap';
 
 import Layout from './Layout';
-import Jointhematch from '../assets/join-the-match01.jpeg';
+import Jointhematch from '../assets/join-the-match.jpg';
 import Belaycords from '../assets/belaycords.jpg';
 import BelayCordsModal01 from '../assets/belaycords-modal-01.jpg';
 import BelayCordsModal02 from '../assets/belaycords-modal-02.jpg';
